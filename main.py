@@ -7,13 +7,15 @@ disciplinary = input("Any disciplinary action? (yes/no): ")
 if gpa == 4.0:
     print("Qualified (Automatic - GPA 4.0)")
 else:
-    if attendance < 60:
-        print("Disqualified (Attendance below 60%)")
+    if gpa < 3.5:
+        print("Not Qualified (GPA below 3.5)")
     else:
-        if disciplinary == "yes":
-            print("Disqualified (Disciplinary action)")
+        if attendance < 60:
+            print("Disqualified (Attendance below 60%)")
         else:
-            if gpa >= 3.5:
+            if disciplinary == "yes":
+                print("Disqualified (Disciplinary action)")
+            else:
                 if attendance >= 80:
                     if activities == "yes" or low_income == "yes":
                         print("Qualified for Scholarship")
@@ -21,6 +23,3 @@ else:
                         print("Not Qualified")
                 else:
                     print("Not Qualified")
-            else:
-                print("Not Qualified")
-
