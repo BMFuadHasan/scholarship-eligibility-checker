@@ -41,7 +41,7 @@ This project fixes that flaw by enforcing **GPA as the highest-priority conditio
 3. Run the script:
 
 ```bash
-python main.py
+python scholarship-eligibility-checker.py
 ```
 
 4. Enter the required inputs when prompted
